@@ -114,18 +114,6 @@ main {
     border-bottom: hsl(193, 59%, 57%) solid 2px;
 }
 
-.image img {
-    width: 100%;
-    border-radius: 2rem;
-    /* box-shadow: 1px 1px 10px rgb(0 0 0 / 50%); */
-}
-
-.content {
-    flex: 2;
-    width: 100%;
-    margin: 0 2rem;
-}
-
 section {
     height: max-content;
     display: flex;
@@ -135,6 +123,20 @@ section {
     scroll-margin-top: 14vh;
     align-items: flex-start;
 }
+
+.image img {
+    width: 100%;
+    border-radius: 2rem;
+    /* box-shadow: 1px 1px 10px rgb(0 0 0 / 50%); */
+}
+
+
+.content {
+    flex: 2;
+    width: 100%;
+    margin: 0 2rem;
+}
+
 
 h2 {
     font-size: 4rem;
@@ -240,6 +242,10 @@ section.members {
     transform: translateZ(5rem);
 }
 
+.card-name {
+    font-size: 2rem;
+}
+
 .card-img, .card-description {
     transform: translateZ(3rem);
 }
@@ -296,19 +302,18 @@ section.members {
 .project h2{
     border-bottom: hsl(120, 84%, 48%) solid 2px;
     text-align:center;
-    margin-left: 28rem;
-    margin-right: 28rem;
+    margin-left: 30rem;
+    margin-right: 30rem;
 }
 
 h3{
     font-size: 2.3rem;
 }
 
-ol{
+/* ol{
     margin: 2rem 4rem;
     padding: 2rem;
-
-}
+} */
 
 .project li{
     font-size: 2.3rem;
@@ -318,5 +323,33 @@ section.project{
     display: list-item;
     padding: 0rem;
     margin-top: 0rem;
+}
+
+.gandalf, .odin {
+    height: max-content;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    margin: 1.5rem 0;
+    scroll-margin-top: 14vh;
+    align-items: center;
+}
+
+.content {
+    flex: 2;
+    width: 100%;
+    margin: 0 2rem;
+}
+
+
+h2 {
+    font-size: 4rem;
+    letter-spacing: 4px;
+}
+
+p {
+    margin: 1.3rem 0;
+    font-size: 1.3rem;
+    letter-spacing: 2px;
 }
 
