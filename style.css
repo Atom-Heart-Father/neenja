@@ -210,6 +210,10 @@ section.members {
     transition: all 1s cubic-bezier(0.5, 1.2, 0.5, 1.2);
 }
 
+.card-title {
+    font-size: 1.5rem;
+}
+
 .card-back {
     transform: rotateY(-180deg);
     background-color: black;
@@ -243,7 +247,7 @@ section.members {
 }
 
 .card-name {
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
 
 .card-img, .card-description {
@@ -265,20 +269,6 @@ section.members {
     border-radius: 100%;
     border: solid 5px rgba(252, 178, 20, 1);
 }
-
-
-
-/* .card-back::after {
-    content: '';
-    position: absolute;
-    top: -25px;
-    bottom: -25px;
-    left: -25px;
-    right: -25px;
-    background-color: black;
-    border-radius: 2rem;
-    z-index: -200;
-} */
 
 .card-description {
     font-size: 1rem;
