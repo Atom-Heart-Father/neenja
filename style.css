@@ -17,7 +17,7 @@ html{
 header {
     /* background-color: black; */
     /* background-image: linear-gradient(to right,black, rgb(51, 51, 51)); */
-    background-color: var(--dark);
+    background-color: var(--dark); 
     display: flex;
     height: 14vh;
     align-items: center;
@@ -164,14 +164,19 @@ section.members {
 }
 
 .content-members {       
-    margin: 0 2rem;
+    width: 100%;
+    /* margin: 0 2rem; */
+    padding-right: 2rem;
 }
 
 .cards{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between; 
+    justify-content: space-evenly; 
     margin-top: 4rem;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .card {
@@ -184,7 +189,7 @@ section.members {
     height: 25rem;
     color: white;
     border-radius: 2rem;
-    margin-bottom: 5rem;
+    margin: 2.5rem 1.25rem;
 }
 
 .card-front, .card-back {
@@ -260,7 +265,6 @@ section.members {
     margin-right: auto;
     height: 12.5rem;
     overflow: hidden;
-    
 }
 
 .card-img img {
@@ -282,36 +286,43 @@ section.members {
     transform: translateZ(3rem);
 }
 
-#svg{
+.social-links img{
     width: 2rem;
     height: 2rem;
     margin: 0.4rem 1rem;
     filter: invert(100%) sepia(31%) saturate(2%) hue-rotate(286deg) brightness(108%) contrast(101%);
+    transition: filter 0.4s;
+}
+
+.social-links img:hover {
+    /* filter: invert(80%) sepia(50%) saturate(2302%) hue-rotate(345deg) brightness(97%) contrast(103%) opacity(100%); */
+    opacity: 0.5;
 }
 
 .project h2{
     border-bottom: hsl(120, 84%, 48%) solid 2px;
-    text-align:center;
-    margin-left: 30rem;
-    margin-right: 30rem;
+    width: 100%;
+
 }
 
 h3{
     font-size: 2.3rem;
 }
 
-/* ol{
-    margin: 2rem 4rem;
-    padding: 2rem;
-} */
-
 .project li{
     font-size: 2.3rem;
 }
 
+.project {
+    width: 100%;
+    margin: 0 2rem;
+    padding-right: 4rem;
+}
+
 section.project{
     display: list-item;
-    padding: 0rem;
+    list-style-type: none;
+    /* padding: 0rem; */
     margin-top: 0rem;
 }
 
@@ -319,7 +330,7 @@ section.project{
     height: max-content;
     display: flex;
     justify-content: space-between;
-    padding: 2rem;
+    /* padding: 2rem; */
     margin: 1.5rem 0;
     scroll-margin-top: 14vh;
     align-items: center;
@@ -341,5 +352,5 @@ p {
     margin: 1.3rem 0;
     font-size: 1.3rem;
     letter-spacing: 2px;
-}
+} 
 
