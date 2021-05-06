@@ -84,6 +84,10 @@ nav {
     color: hsl(41, 97%, 53%);
 }
 
+#projects-nav:hover {
+    color: hsl(120, 84%, 48%);
+}
+
 /* ------------------------------------------------*/
 
 main {
@@ -315,7 +319,6 @@ h3{
 
 .project {
     width: 100%;
-    margin: 0 2rem;
     padding-right: 4rem;
 }
 
@@ -346,6 +349,15 @@ section.project{
 h2 {
     font-size: 4rem;
     letter-spacing: 4px;
+}
+
+.content a {
+    text-decoration: none;
+    color: var(--light);
+}
+
+.content a:hover {
+    opacity: 0.6;
 }
 
 p {
