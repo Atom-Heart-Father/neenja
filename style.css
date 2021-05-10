@@ -61,7 +61,7 @@ nav {
 
 .nav-links {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-around;
     list-style: none;
     font-size: 20px;
 }
@@ -86,6 +86,19 @@ nav {
 
 #projects-nav:hover {
     color: hsl(120, 84%, 48%);
+}
+
+.burger{
+    display: none;
+    cursor: pointer;
+}
+
+.burger div{
+    width: 25px;
+    height: 3px;
+    background-color: rgb(226,226,226);
+    margin: 5px;
+    transition: all 0.3s ease-in;
 }
 
 /* ------------------------------------------------*/
@@ -366,3 +379,71 @@ p {
     letter-spacing: 2px;
 } 
 
+@media screen and (max-width: 768px) {
+    .logo-container {
+        font-size: 1rem;
+        position: absolute;
+        margin-left: 0;
+    }
+    
+    .nav-links{
+        position: absolute; 
+        display: flex;
+        justify-content: flex-start;
+        right: 0px;
+        /*height: 40%;*/
+        top: 14vh;        
+        background-color: var(--dark);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        min-width: max-content;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+        z-index: 99;
+        
+    } 
+
+    .nav-links li {
+        padding: 1.5rem 2rem;
+        opacity: 0;
+    }
+    
+    .nav-links a {
+        margin: 0px 1px !important;
+
+    }      
+    
+    .burger{
+        margin: 3rem;
+        display: block;
+    }
+}
+
+.nav-active{
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px)
+    }
+}
+
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px, 6px);    
+}
+
+.toggle .line2{
+    opacity: 0;
+}
+
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px,-6px);
+}
